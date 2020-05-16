@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+@font-face{
+    font-family: GenJyuuGothicH;
+    src: url("./font/genjyuugothic/GenJyuuGothic-P-Heavy.ttf");
+}
+@font-face{
+    font-family: GenJyuuGothicM;
+    src: url("./font/genjyuugothic/GenJyuuGothic-P-Medium.ttf");
+}
+
+.GenJyuuGothicH{
+    font-family: GenJyuuGothicH;
+}
+.GenJyuuGothicM{
+    font-family: GenJyuuGothicM;
+}
+
+body {
+    background: url("assests/背景.png");
+    background-size: 100vw;
+}
+
+.left_selection{
+    /* Try to group it later */
+}
+
+.right_selection{
+    /* Try to group it later */
+}
+
+navigation_bar {    
+    top: 9vh;
+    left: 11.5vw;    
+    color: aqua;    
+}
+
+level_group{
+    position: absolute;
+    left: 0vw;
+}
+
+#level_logo {
+    position: absolute;
+    width: 27vw;
+}
+
+money_group{
+    position: absolute;
+    top: 0.4vh;
+    left: 10vw;
+}
+
+#money_logo{
+    position: absolute;
+    width: 3vw;
+    left: 19.5vw;
+}
+
+#money_rect{
+    position: absolute;
+    width: 20vw;
+    left: 23vw;
+}
+
+#money_value{
+    position: absolute;
+    width: 10vw;
+    top: 0.3vh;
+    left: 31vw;
+}
+
+#nortification{
+
+}
+
+#setting{
+    position: absolute;
+    width: 6vw;
+    top: 0.5vh;
+    left: 64vw;
+}
+
+#help{
+    position: absolute;
+    width: 6vw;
+    top: 0.55vh;
+    left: 73vw;
+}
+
+#ass_dinasour{
+    width: 63vw;
+    left: 23vw;
+    top: 40vh;
+    opacity: 1;
+}
+
+.left_selection{
+    opacity: 1;
+}
+
+#left_leaf{
+    width: 43vw;
+    bottom: 0vh;
+    left: 0vw;
+}
+
+#mission_logo{
+    width: 7vw;
+    bottom: 7vh;
+    left: 11vw;
+}
+
+#mission_text{
+    width: 13vw;
+    bottom: 4.5vh;
+    left: 9vw;
+}
+
+.right_selection{
+    opacity: 1;
+}
+
+#right_leaf{
+    width: 43vw;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+#training_logo{
+    width: 11vw;
+    bottom: 7.5vh;
+    right: 9.5vw;   
+}
+
+#training_text{
+    width: 16.5vw;
+    bottom: 4.5vh;
+    right: 7.8vw;
+}
+
+.information_box{
+    width: 100vw;
+    height: 29vh;
+    bottom: 0vh;
+    background-color: white;
+    opacity: 0;
+}
+
+#subtitle_text_01{
+    position: absolute;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    top: 4.5vh;
+    left: 8vw;
+    opacity: 0;
+}
+
+#subtitle_text_02{
+    position: absolute;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    top: 6vh;
+    left: 15vw;
+    opacity: 0;
+}
