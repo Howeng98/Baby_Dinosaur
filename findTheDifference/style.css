@@ -21,7 +21,7 @@
 }
 
 body {
-    background: url("assests/背景.png");
+    background: url("assests/背景@3x.png");
     background-size: 100vw;
 }
 
@@ -75,7 +75,10 @@ money_group{
 }
 
 #nortification{
-
+    position: absolute;
+    width: 5.3vw;
+    top: 0.4vh;
+    left: 56vw;
 }
 
 #setting{
@@ -99,8 +102,17 @@ money_group{
     opacity: 1;
 }
 
+#fTD_question{
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    top: 29vh;
+    opacity: 0;
+}
+
 .left_selection{
     opacity: 1;
+    z-index: 1;
 }
 
 #left_leaf{
@@ -123,6 +135,8 @@ money_group{
 
 .right_selection{
     opacity: 1;
+    z-index: 1;
+    position: absolute; 
 }
 
 #right_leaf{
@@ -134,7 +148,7 @@ money_group{
 #training_logo{
     width: 11vw;
     bottom: 7.5vh;
-    right: 9.5vw;   
+    right: 9.5vw;
 }
 
 #training_text{
@@ -153,18 +167,100 @@ money_group{
 
 #subtitle_text_01{
     position: absolute;
-    font-size: 25pt;
-    letter-spacing: 1px;
-    top: 4.5vh;
-    left: 8vw;
-    opacity: 0;
+    width: 100vw;
+    bottom: 0vh;
+    opacity: 1;
+}
+
+#button_01{
+    position: absolute;
+    width: 18vw;
+    left: 40vw;
+    bottom: 5vh;
+    opacity: 1;
+    z-index: 1;
 }
 
 #subtitle_text_02{
-    position: absolute;
-    font-size: 25pt;
-    letter-spacing: 1px;
-    top: 6vh;
-    left: 15vw;
+    position: absolute;    
+    width: 100vw;
+    bottom: 0vh;
+    opacity: 0;    
+}
+
+#subtitle_text_03{
+    position: absolute;    
+    width: 100vw;
+    bottom: 0vh;
     opacity: 0;
+}
+
+/* 返回 */
+#button_02{
+    position: absolute;
+    width: 19vw;
+    left: 40vw;
+    top: 67vh;
+    opacity: 0;
+    z-index: 1;
+}
+/*　結束遊戲 */
+#button_03{
+    position: absolute;
+    width: 19vw;
+    left: 40vw;
+    top: 67vh;
+    opacity: 0;
+    z-index: 1;
+}
+
+@keyframes fade_in{
+    100%{
+        opacity: 1;       
+    }
+}
+
+@keyframes fade_out{
+    100%{        
+        /*left: 120vw;*/
+        opacity: 0;
+        
+    }
+}
+
+@keyframes fade_down{
+    100%{        
+        opacity: 1;
+        bottom: -50vh;
+    }
+}
+
+.fade_in{
+    animation-name: fade_in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fade_out{
+    animation-name: fade_out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#findTheDifference{
+    position: absolute;
+    width: 39vw;
+    left: 30vw;
+    top: 28vh;
+    opacity: 0;
+    z-index: 1;
+}
+
+#jumpJumpGame{
+    position: absolute;
+    width: 39vw;
+    left: 30vw;
+    top: 49vh;
+    opacity: 0;
+    z-index: 1;
 }
