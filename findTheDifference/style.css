@@ -104,10 +104,20 @@ money_group{
 
 #fTD_question{
     position: absolute;
-    width: 80vw;
+    width: 1vw;
     left: 10vw;
     top: 29vh;
     opacity: 0;
+    z-index: 0;
+}
+
+#fTD_question2{
+    position: absolute;
+    width: 1vw;
+    left: 10vw;
+    top: 29vh;
+    opacity: 0;
+    z-index: 0;
 }
 
 .left_selection{
@@ -251,10 +261,10 @@ money_group{
     position: absolute;
     width: 39vw;
     left: 30vw;
-    top: 28vh;
+    top: 30vh;
     opacity: 0;
     z-index: 1;
-}
+}   
 
 #jumpJumpGame{
     position: absolute;
