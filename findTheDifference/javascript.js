@@ -139,6 +139,7 @@ $('#button_03').click(function(){
     $('#training_logo').animate({right: "9.5vw", opacity:"1"}, 500);
     $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
     $('#timer').fadeTo('slow',0);
+    $('#time').fadeTo('slow',0);
 });
 
 function startTimer(duration) {
