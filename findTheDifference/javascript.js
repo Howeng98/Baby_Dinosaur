@@ -33,7 +33,7 @@ $('#button_01').click(function(){
     $('#button_02').css("z-index", "5");
     $('#button_03').css("z-index", "0");
     $('#ass_dinasour').fadeTo('slow',0);
-    $('.information_box').fadeTo('slow',1);    
+    // $('.information_box').animate({bottom:"-2.5vh",opacity:"1"});    
     $('#findTheDifference').fadeTo('slow',1);
     $('#findTheDifference').css("z-index","30");
     $('#jumpJumpGame').fadeTo('slow',1);
@@ -46,7 +46,7 @@ $('#button_01').click(function(){
 /* 返回　*/
 $('#button_02').click(function(){
     $('#subtitle_text_02').fadeTo('slow',0);
-    $('.information_box').fadeTo('slow',0);
+    $('.information_box').fadeTo('slow',0);       
     $('#ass_dinasour').fadeTo('slow',1);
     $('#button_01').fadeTo('slow',0);
     $('#button_02').fadeTo('slow',0);
@@ -77,10 +77,10 @@ $('#findTheDifference').click(function(){
     $('#subtitle_text_03').fadeTo('slow',1);        
     $('#button_01').fadeTo('slow',0);
     $('#button_02').fadeTo('slow',0);
-    $('#button_03').fadeTo('slow',1);
+    $('#button_03').fadeTo('slow',0);
     $('#button_01').css("z-index", "0");
     $('#button_02').css("z-index", "0");
-    $('#button_03').css("z-index", "5");
+    $('#button_03').css("z-index", "0");
     if(random_question == 0){
         $('#fTD_question').fadeTo('slow',1);
         $('#fTD_question').css("z-index", "5");
@@ -106,12 +106,14 @@ $('#start_button').click(function(){
     $('#start_button').fadeTo('slow',0);
     $('#start_button').css("z-index", "0");    
     $('#cover').fadeTo('5000',0);
+    $('#button_03').fadeTo('slow',1);
+    $('#button_03').css("z-index", "5");
 });
 
 /* 結束遊戲 */
 $('#button_03').click(function(){    
-    $('.information_box').fadeTo('slow',0);
-    $('#subtitle_text_03').fadeTo('slow',0);    
+    $('.information_box').fadeTo('slow',0);       
+    $('#subtitle_text_03').fadeTo('slow',0);       
     $('#fTD_question').fadeTo('slow',0);
     $('#fTD_question2').fadeTo('slow',0);
     $('#button_01').fadeTo('slow',0);
