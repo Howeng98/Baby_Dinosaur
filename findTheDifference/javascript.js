@@ -1,4 +1,5 @@
 var random_question = 0;
+var countdown_duration = 180;
 $('.right_selection').click(function(){    
     $('#left_leaf').animate({left:-200, opacity:"0"}, 500);
     $('#mission_logo').animate({left:-200, opacity:"0"}, 500);
@@ -108,6 +109,8 @@ $('#start_button').click(function(){
     $('#cover').fadeTo('5000',0);
     $('#button_03').fadeTo('slow',1);
     $('#button_03').css("z-index", "5");
+    $('#timer').fadeTo('slow',1);
+    startTimer(countdown_duration);
 });
 
 /* 結束遊戲 */
@@ -135,4 +138,23 @@ $('#button_03').click(function(){
     $('#right_leaf').animate({right: "0vw", opacity:"1"}, 500);
     $('#training_logo').animate({right: "9.5vw", opacity:"1"}, 500);
     $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
+    $('#timer').fadeTo('slow',0);
 });
+
+function startTimer(duration) {
+    var timer = duration, seconds;
+    setInterval(function () {
+        seconds = parseInt(timer);
+        var string = "  " + seconds;
+
+        document.getElementById("time").innerHTML = string;
+        
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+// window.onload = function () {    
+//     startTimer(this.countdown_duration);
+// };

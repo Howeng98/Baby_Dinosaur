@@ -320,4 +320,24 @@ money_group{
     z-index: 0;     
 }
 
+#timer{
+    position: absolute;
+    width: 15vw;
+    top: 17vh;
+    left: 42vw;
+    opacity: 0;
+}
 
+#time{
+    position: absolute;
+    width: 4vw;
+    left: 44.1vw;
+    top: 20vh;
+    font-size: 22px;
+    color: #416545;    
+    z-index: 5;
+}
+
+.center{
+    text-align: center;
+}
