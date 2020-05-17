@@ -26,11 +26,11 @@ body {
 }
 
 .left_selection{
-    /* Try to group it later */
+    position: relative;
 }
 
 .right_selection{
-    /* Try to group it later */
+    position: relative;
 }
 
 navigation_bar {    
@@ -189,6 +189,7 @@ money_group{
     bottom: 5vh;
     opacity: 1;
     z-index: 1;
+    display: none;
 }
 
 #subtitle_text_02{
@@ -213,6 +214,7 @@ money_group{
     top: 67vh;
     opacity: 0;
     z-index: 1;
+    display: none;
 }
 /*　結束遊戲 */
 #button_03{
@@ -222,6 +224,17 @@ money_group{
     top: 67vh;
     opacity: 0;
     z-index: 1;
+    display: none;
+}
+/* 開始遊戲　*/
+#start_button{
+    position: absolute;
+    width: 19vw;
+    left: 40vw;
+    top: 46vh;
+    opacity: 0;
+    z-index: 1;
+    display: none;
 }
 
 @keyframes fade_in{
@@ -245,6 +258,12 @@ money_group{
     }
 }
 
+@keyframes fade_left{    
+    100%{        
+        left: 500px;
+    }
+}
+
 .fade_in{
     animation-name: fade_in;
     animation-duration: 2s;
@@ -257,13 +276,20 @@ money_group{
     animation-fill-mode: forwards;
 }
 
+.fade_left{
+    animation-name: fade_left;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 #findTheDifference{
     position: absolute;
     width: 39vw;
     left: 30vw;
     top: 30vh;
     opacity: 0;
-    z-index: 1;
+    z-index: 0;
+    display: none;
 }   
 
 #jumpJumpGame{
@@ -272,5 +298,15 @@ money_group{
     left: 30vw;
     top: 49vh;
     opacity: 0;
-    z-index: 1;
+    z-index: 0;
+    display: none;
+}
+
+#cover{
+    position: absolute;
+    width: 80vw;
+    top: 29vh;
+    left: 10vw;
+    opacity: 0;
+    z-index: 0; 
 }
