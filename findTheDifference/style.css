@@ -308,5 +308,16 @@ money_group{
     top: 29vh;
     left: 10vw;
     opacity: 0;
-    z-index: 0; 
+    z-index: 0;     
 }
+
+#black_cover{
+    position: absolute;
+    width: 100vw;
+    top: 0vh;
+    left: 0vw;
+    opacity: 0;
+    z-index: 0;     
+}
+
+

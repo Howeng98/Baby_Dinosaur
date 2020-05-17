@@ -18,12 +18,14 @@ $('.right_selection').click(function(){
     $('#fTD_question2').fadeTo('slow',0);
     $('#fTD_question').css("z-index", "0");
     $('#fTD_question2').css("z-index", "0");
+    $('#black_cover').fadeTo('slow',1);
 });
 
 /* 我知道了 */
 $('#button_01').click(function(){
     $('#subtitle_text_01').fadeTo('slow',0);    
     $('#subtitle_text_02').fadeTo('slow',1);
+    $('#black_cover').fadeTo('slow',0);
     $('#button_01').fadeTo('slow',0);
     $('#button_02').fadeTo('slow',1);
     $('#button_03').fadeTo('slow',0);
