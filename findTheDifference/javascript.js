@@ -1,6 +1,6 @@
 var random_question = 0;
-var countdown_duration = 180;
-$('.right_selection').click(function(){    
+var countdown_duration = 5;
+$('.right_selection').click(function(){ 
     $('#left_leaf').animate({left:-200, opacity:"0"}, 500);
     $('#mission_logo').animate({left:-200, opacity:"0"}, 500);
     $('#mission_text').animate({left:-200, opacity:"0"}, 500);
@@ -67,6 +67,18 @@ $('#button_02').click(function(){
     $('#right_leaf').animate({right: "0vw", opacity:"1"}, 500);
     $('#training_logo').animate({right: "9.5vw", opacity:"1"}, 500);
     $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
+    $('#ok_button').hide();
+    $('#share_button').hide();
+    $('#text_01').hide();
+    $('#text_02').hide();
+    $('#text_03').hide();
+    $('#text_04').hide();
+    $('#result_text').hide();
+    $('#result_list').hide();
+    $('#rank_list').hide();
+    $('#footstep_01').hide();
+    $('#footstep_02').hide();
+    $('#footstep_03').hide();
     
 });
 
@@ -140,22 +152,79 @@ $('#button_03').click(function(){
     $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
     $('#timer').fadeTo('slow',0);
     $('#time').fadeTo('slow',0);
+    $('#ok_button').hide();
+    $('#share_button').hide();
+    $('#text_01').hide();
+    $('#text_02').hide();
+    $('#text_03').hide();
+    $('#text_04').hide();
+    $('#result_text').hide();
+    $('#result_list').hide();
+    $('#rank_list').hide();
+    $('#footstep_01').hide();
+    $('#footstep_02').hide();
+    $('#footstep_03').hide();
+
 });
 
 function startTimer(duration) {
     var timer = duration, seconds;
     setInterval(function () {
-        seconds = parseInt(timer);
-        var string = "  " + seconds;
-
-        document.getElementById("time").innerHTML = string;
+        seconds = parseInt(timer);        
+        document.getElementById("time").innerHTML = seconds;
         
         if (--timer < 0) {
-            timer = duration;
+            timer = 0;
+            ending_function();
         }
     }, 1000);
 }
 
-// window.onload = function () {    
-//     startTimer(this.countdown_duration);
-// };
+function ending_function(){    
+    $('#timer').fadeTo('slow',0);
+    $('#time').fadeTo('slow',0);
+    $('.information_box').fadeTo('slow',0);       
+    $('#subtitle_text_03').fadeTo('slow',0);       
+    $('#fTD_question').fadeTo('slow',0);
+    $('#fTD_question2').fadeTo('slow',0);
+    $('#fTD_question').css("display", "none");
+    $('#fTD_question2').css("display", "none");
+    $('#fTD_question').css("width", "0vw");
+    $('#fTD_question2').css("width", "0vw");
+    $('#fTD_question').css("z-index", "0");
+    $('#fTD_question2').css("z-index", "0");
+    $('#button_01').fadeTo('slow',0);
+    $('#button_02').fadeTo('slow',0);
+    $('#button_03').fadeTo('slow',0);
+    $('#button_01').css("z-index", "0");
+    $('#button_02').css("z-index", "0");
+    $('#button_03').css("z-index", "0");    
+    $('#ok_button').css("z-index","10");
+    $('#share_button').css("z-index","5");
+    $('#ok_button').fadeTo('slow',1);
+    $('#share_button').fadeTo('slow',1);
+    $('#text_01').fadeTo('slow',1);
+    $('#text_02').fadeTo('slow',1);
+    $('#text_03').fadeTo('slow',1);
+    $('#text_04').fadeTo('slow',1);
+    $('#result_text').fadeTo('slow',1);
+    $('#result_list').fadeTo('slow',1);
+    $('#rank_list').fadeTo('slow',1);
+    $('#footstep_01').fadeTo('slow',1);
+    $('#footstep_02').fadeTo('slow',1);
+    $('#footstep_03').fadeTo('slow',1);        
+    countdown_duration = 0;
+}
+
+$('#ok_button').click(function(){    
+    console.log("Test");
+    $('#ass_dinasour').fadeTo('slow',1);
+    $('#left_leaf').animate({left: "0vw", opacity:"1"}, 500);
+    $('#mission_logo').animate({left: "11vw", opacity:"1"}, 500);
+    $('#mission_text').animate({left: "9vw", opacity:"1"}, 500);
+    $('#right_leaf').animate({right: "0vw", opacity:"1"}, 500);
+    $('#training_logo').animate({right: "9.5vw", opacity:"1"}, 500);
+    $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
+    countdown_duration = 0;
+});
+

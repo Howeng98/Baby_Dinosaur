@@ -331,9 +331,9 @@ money_group{
 #time{
     position: absolute;
     width: 4vw;
-    left: 44.1vw;
-    top: 20vh;
-    font-size: 22px;
+    left: 44.5vw;
+    top: 19.8vh;
+    font-size: 1.3em;
     color: #416545;    
     z-index: 5;
 }
@@ -341,3 +341,122 @@ money_group{
 .center{
     text-align: center;
 }
+
+finish_score{
+    
+}
+
+#share_button{
+    position: absolute;   
+    width: 21vw;
+    top: 60vh;
+    left: 24vw;
+    opacity: 0;
+    z-index: 3;
+    display: none;
+}
+
+#ok_button{
+    position: absolute;
+    width: 21vw;
+    top: 60vh;
+    left: 54vw;
+    opacity: 0;
+    z-index: 3;   
+    display: none;
+}
+
+#result_list{
+    position: absolute;
+    width: 80vw;
+    top: 33vh;
+    left: 10vw;
+    opacity: 1;
+    display: none;
+}
+
+#text_01{
+    position: absolute;
+    width: 30vw;
+    top: 35.5vh;
+    left: 35vw;
+    opacity: 1;
+    display: none;
+}
+
+#text_02{
+    position: absolute;
+    width: 9vw;
+    top: 49vh;
+    left: 45vw;
+    opacity: 1;
+    display: none;
+}
+
+#result_text{
+    position: absolute;
+    width: 26vw;
+    top: 51.5vh;
+    left: 37vw;
+    opacity: 1;
+    display: none;
+}
+
+#footstep_01{
+    position: absolute;
+    width: 28vw;
+    top: 39vh;
+    left: 19vw;
+    opacity: 1;
+    display: none;
+}
+
+#footstep_02{
+    position: absolute;
+    width: 28vw;
+    top: 39vh;
+    left: 37vw;
+    opacity: 1;
+    display: none;
+}
+
+#footstep_03{
+    position: absolute;
+    width: 28vw;
+    top: 39vh;
+    left: 55vw;
+    opacity: 1;
+    display: none;
+}
+
+#rank_list{
+    position: absolute;
+    width: 80vw;
+    top: 70vh;
+    left: 10vw;
+    opacity: 1;
+    display: none;
+}
+
+#text_03{
+    position: absolute;
+    width: 15vw;
+    top: 72.5vh;
+    left: 42vw;
+    opacity: 1;
+    display: none;
+}
+
+#text_04{
+    position: absolute;
+    width: 47vw;
+    top: 77vh;
+    left: 26vw;
+    opacity: 1;
+    display: none;
+}
+
+
+
+
+
