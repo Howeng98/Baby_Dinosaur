@@ -152,6 +152,7 @@ $('#start_button').click(function(){
 /* 結束遊戲 */
 $('#button_03').click(function(){    
     ans1_1 = 0,ans1_2 = 0;ans1_3 = 0;ans1_4 = 0;ans1_5 = 0;
+    ans2_1 = 0,ans2_2 = 0;ans2_3 = 0;ans2_4 = 0;ans2_5 = 0;
     $('.information_box').fadeTo('slow',0);       
     $('#subtitle_text_03').fadeTo('slow',0);           
     $('#button_01').fadeTo('slow',0);
@@ -237,6 +238,7 @@ function startTimer(duration) {
 
 function ending_function(){
     ans1_1 = 0,ans1_2 = 0;ans1_3 = 0;ans1_4 = 0;ans1_5 = 0;
+    ans2_1 = 0,ans2_2 = 0;ans2_3 = 0;ans2_4 = 0;ans2_5 = 0;
     $('#timer').fadeTo('slow',0);
     $('#time').fadeTo('slow',0);
     $('.information_box').fadeTo('slow',0);       
