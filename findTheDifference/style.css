@@ -497,10 +497,10 @@ money_group{
 
 #time{
     position: absolute;
-    width: 4vw;
-    left: 44.5vw;
-    top: 19.8vh;
-    font-size: 1.3em;
+    width: 20vw;
+    left: 39.5vw;
+    top: 20vh;
+    font-size: 3em;
     color: #416545;    
     z-index: 5;
     display: none;
@@ -508,10 +508,6 @@ money_group{
 
 .center{
     text-align: center;
-}
-
-finish_score{
-    
 }
 
 #share_button{

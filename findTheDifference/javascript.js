@@ -1,9 +1,10 @@
 var random_question = 0;
-var countdown_duration;
+var countdown_duration = 180;
+var duration = countdown_duration;
 var remain_time = 0;
 var ans_isclear = 0;
 var go_in = true;
-var refreshInterval
+var refreshInterval;
 var ans1_1 = 0,ans1_2 = 0;ans1_3 = 0;ans1_4 = 0;ans1_5 = 0;
 var ans2_1 = 0,ans2_2 = 0;ans2_3 = 0;ans2_4 = 0;ans2_5 = 0;
 
@@ -146,15 +147,15 @@ $('#start_button').click(function(){
         $('#answer2_08').fadeTo('slow',0);                                    
         $('#answer2_09').fadeTo('slow',0);    
         $('#answer2_10').fadeTo('slow',0);  
-    }
-    countdown_duration = 30;
-    startTimer(30);
+    }    
+    startTimer(duration);
 });
 
 /* 結束遊戲 */
 $('#button_03').click(function(){    
     ans1_1 = 0,ans1_2 = 0;ans1_3 = 0;ans1_4 = 0;ans1_5 = 0;
     ans2_1 = 0,ans2_2 = 0;ans2_3 = 0;ans2_4 = 0;ans2_5 = 0;
+    clearInterval(refreshInterval);
     $('.information_box').fadeTo('slow',0);       
     $('#subtitle_text_03').fadeTo('slow',0);           
     $('#button_01').fadeTo('slow',0);
@@ -172,8 +173,8 @@ $('#button_03').click(function(){
     $('#right_leaf').animate({right: "0vw", opacity:"1"}, 500);
     $('#training_logo').animate({right: "9.5vw", opacity:"1"}, 500);
     $('#training_text').animate({right: "7.8vw", opacity:"1"}, 500);
-    $('#timer').fadeTo('slow',0);
-    $('#time').fadeTo('slow',0);
+    $('#timer').css("display","none");
+    $('#time').css("display","none");
     $('#ok_button').hide();
     $('#share_button').hide();
     $('#text_01').hide();
@@ -216,23 +217,26 @@ $('#button_03').click(function(){
     
 });
 
-function startTimer(duration) {
-    var timer = duration, seconds;    
+function startTimer(duration_time) {
+    var timer = duration_time, seconds;   
     refreshInterval = setInterval(function () {
         seconds = parseInt(timer);        
         document.getElementById("time").innerHTML = seconds;
         if(timer > 0)
-            --timer;
+            timer--;
         if(ans_isclear == 5){
             ans_isclear = 0;
-            remain_time = timer;
-            document.getElementById("result_text").innerHTML = timer + "秒";
+            remain_time = timer + 1;
+            document.getElementById("result_text").innerHTML = remain_time + "秒";
+            //duration = countdown_duration;
             ending_function();
         }
         if(timer <= 0 && go_in){
             ans_isclear = 0;
             remain_time = 0;                
             ending_function();
+            document.getElementById("result_text").innerHTML = remain_time + "秒";
+            //duration = countdown_duration;
             go_in = false;
         }
     }, 1000);
@@ -241,6 +245,7 @@ function startTimer(duration) {
 function ending_function(){
     ans1_1 = 0,ans1_2 = 0;ans1_3 = 0;ans1_4 = 0;ans1_5 = 0;
     ans2_1 = 0,ans2_2 = 0;ans2_3 = 0;ans2_4 = 0;ans2_5 = 0;
+    clearInterval(refreshInterval);
     $('#timer').fadeTo('slow',0);
     $('#time').fadeTo('slow',0);
     $('.information_box').fadeTo('slow',0);       
