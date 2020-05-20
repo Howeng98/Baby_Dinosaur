@@ -23,7 +23,7 @@ $('.right_selection').click(function(){
     $('#button_02').css("z-index", "0");
     $('#button_03').css("z-index", "0");    
     $('#timer').css("display", "none");    
-    $('#black_cover').fadeTo('slow',1);
+    $('#black_cover').fadeTo('slow',1);    
 });
 
 /* 我知道了 */
@@ -91,11 +91,13 @@ $('#findTheDifference').click(function(){
     $('#button_02').css("z-index", "0");
     $('#button_03').css("z-index", "0");
     if(random_question == 0){
-        //$('#fTD_question').fadeTo('slow',1);
+        $('#fTD_question').fadeTo('slow',1);
+        document.getElementById("text_01").innerHTML = "第一關";
         random_question = 1;
     }
     else{
-        //$('#fTD_question2').fadeTo('slow',1);
+        $('#fTD_question2').fadeTo('slow',1);
+        document.getElementById("text_01").innerHTML = "第二關";
         random_question = 0;
     }
     $('#cover').fadeTo('slow',1);

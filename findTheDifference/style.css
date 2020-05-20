@@ -545,10 +545,13 @@ finish_score{
 
 #text_01{
     position: absolute;
-    width: 30vw;
-    top: 35.5vh;
-    left: 35vw;
+    width: 40vw;
+    top: 35vh;
+    left: 30.5vw;
+    font-size: 6.5em;
+    color: #783F1E;
     opacity: 1;
+    z-index: 10;
     display: none;
 }
 
