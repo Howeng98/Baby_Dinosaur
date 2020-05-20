@@ -102,22 +102,186 @@ money_group{
     opacity: 1;
 }
 
+
+#answer1_01{
+    position: absolute;
+    width: 7vw;
+    height: 3.5vh;
+    left: 21vw;
+    top: 30.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;    
+    opacity: 0;
+    z-index: 10;
+    display: none;    
+}
+
+#answer1_02{
+    position: absolute;
+    width: 7vw;
+    height: 3.5vh;
+    left: 21vw;
+    top: 49.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_03{
+    position: absolute;
+    width: 13vw;
+    height: 4vh;
+    left: 37vw;
+    top: 32.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_04{
+    position: absolute;
+    width: 13vw;
+    height: 4vh;
+    left: 37vw;
+    top: 51.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_05{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vh;
+    left: 55.5vw;
+    top: 32vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_06{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vh;
+    left: 55.5vw;
+    top: 50.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_07{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vh;
+    left: 70vw;
+    top: 37.7vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_08{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vh;
+    left: 70vw;
+    top: 56.5vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_09{
+    position: absolute;
+    width: 8vw;
+    height: 4vh;
+    left: 72vw;
+    top: 42vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+#answer1_10{
+    position: absolute;
+    width: 8vw;
+    height: 4vh;
+    left: 72vw;
+    top: 60vh;   
+    border-style: solid;
+    border-width: 5pt;
+    border-color:red;    
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+}
+
+
+
 #fTD_question{
     position: absolute;
-    width: 1vw;
+    width: 80vw;
     left: 10vw;
     top: 29vh;
     opacity: 0;
-    z-index: 0;
+    z-index: 1;    
+    display: none;
 }
 
 #fTD_question2{
     position: absolute;
-    width: 1vw;
+    width: 80vw;
     left: 10vw;
     top: 29vh;
     opacity: 0;
-    z-index: 0;
+    z-index: 1;
+    display: none;
 }
 
 .left_selection{
@@ -308,7 +472,8 @@ money_group{
     top: 29vh;
     left: 10vw;
     opacity: 0;
-    z-index: 0;     
+    z-index: 5;
+    display: none;     
 }
 
 #black_cover{
@@ -318,6 +483,7 @@ money_group{
     left: 0vw;
     opacity: 0;
     z-index: 0;     
+    display: none;
 }
 
 #timer{
@@ -326,6 +492,7 @@ money_group{
     top: 17vh;
     left: 42vw;
     opacity: 0;
+    display: none;
 }
 
 #time{
@@ -336,6 +503,7 @@ money_group{
     font-size: 1.3em;
     color: #416545;    
     z-index: 5;
+    display: none;
 }
 
 .center{
@@ -396,10 +564,12 @@ finish_score{
 #result_text{
     position: absolute;
     width: 26vw;
-    top: 51.5vh;
+    top: 53vh;
     left: 37vw;
-    opacity: 1;
-    display: none;
+    font-size: 5em;
+    color: #FFDF96;
+    opacity: 1;    
+    display: none
 }
 
 #footstep_01{
@@ -455,8 +625,3 @@ finish_score{
     opacity: 1;
     display: none;
 }
-
-
-
-
-
